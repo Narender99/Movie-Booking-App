@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    background: aliceblue;
+    color: black;
+    font-family: 'sans-serif';
+}
+
+.main_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movie {
+    padding-right: 100px
+}
+
+.seats_information{
+    margin-top: 20px;
+    color: black;
+}
+.list_items{
+    margin: 0px;
+    padding: 0px;
+}
+
+.list_items li {
+    display: inline-block;
+    padding: 2px 15px;
+}
+
+li .seat{
+    display: inline-block;
+}
+
+li span{
+    padding: 2px;
+}
+
+.seat {
+    background-color: #dcdce8;
+    height: 12px;
+    width: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: #17de59;
+}
+
+.seat.sold {
+    background-color: #7d0808;
+}
+
+.screen_container {
+    perspective: 1000px;
+}
+
+.screen {
+    background-color: #fff;
+    height: 90px;
+    width: 90%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 2px 20px rgba(22, 22, 22, 0.7);
+}
+
+div.messgae {
+    margin-top: 20px;
+    color: black;
+    padding:  0px 60px;
+}
+
+.row {
+    display: flex;
+}
+.row .seat {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.row .sold {
+    cursor: none;
+}
+
+.seat:nth-child(3){
+    margin-right: 20px;
+}
+
+.seat:nth-last-of-type(3){
+    margin-left: 20px;
+}
+
+.price{
+    margin: 0px;
+}
+
+.second_row {
+    display: flex;
+    margin: 5;
+}
+
+.gold_price{
+    margin-top: 10px;
+}
+
+.diamond_price {
+    margin-top: 10px;
+}
